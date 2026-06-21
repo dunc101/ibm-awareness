@@ -18,6 +18,7 @@ import ResourcesPage from './pages/ResourcesPage'
 import JustDiagnosedPage from './pages/JustDiagnosedPage'
 import BlogPage from './pages/BlogPage'
 import BlogPostPage from './pages/BlogPostPage'
+import AdaptiveClothingPage from './pages/AdaptiveClothingPage'
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
             <Route path="/just-diagnosed" element={<JustDiagnosedPage />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/:slug" element={<BlogPostPage />} />
+            <Route path="/adaptive-clothing" element={<AdaptiveClothingPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

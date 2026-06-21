@@ -22,6 +22,7 @@ const sections = [
       { to: '/tips/middle', label: 'Middle Stage' },
       { to: '/tips/advanced', label: 'Advanced Stage' },
       { to: '/tips/general', label: 'General Tips' },
+      { to: '/adaptive-clothing', label: 'Adaptive Clothing' },
     ],
   },
   {
