@@ -1,4 +1,7 @@
+import { usePageTitle } from '../hooks/usePageTitle'
+
 export default function AdvancedEquipmentPage() {
+  usePageTitle('Equipment Guide', 'Power wheelchairs, hospital beds, ventilators, feeding tubes, and insurance coverage for IBM equipment.')
   return (
     <>
       <div className="page-header">

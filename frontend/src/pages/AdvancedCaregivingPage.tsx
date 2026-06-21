@@ -1,4 +1,7 @@
+import { usePageTitle } from '../hooks/usePageTitle'
+
 export default function AdvancedCaregivingPage() {
+  usePageTitle('Caregiving', 'Daily care routines, transfer techniques, caregiver burnout prevention, and respite care options.')
   return (
     <>
       <div className="page-header">

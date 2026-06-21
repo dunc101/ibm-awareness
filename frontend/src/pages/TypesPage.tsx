@@ -1,6 +1,36 @@
+import { usePageTitle } from '../hooks/usePageTitle'
+
+const typesFaq = [
+  {
+    q: 'What is the difference between sporadic and hereditary IBM?',
+    a: 'Sporadic IBM (sIBM) is the most common form — it occurs randomly, is NOT inherited, and features prominent inflammation. Hereditary IBM (hIBM) is passed genetically, has little or no inflammation, and is classified as a myopathy rather than a myositis. About 67% of sIBM patients carry a specific HLA gene that creates susceptibility, but it is not directly inherited.',
+  },
+  {
+    q: 'Can IBM be misdiagnosed as another type?',
+    a: 'Yes. IBM is frequently misdiagnosed as polymyositis, especially in early stages. It is also sometimes confused with ALS, normal aging, fibromyalgia, or cervical spinal stenosis. A muscle biopsy showing rimmed vacuoles and the anti-NT5C1A antibody test are key for accurate diagnosis.',
+  },
+]
+
 export default function TypesPage() {
+  usePageTitle('Types of IBM', 'Sporadic, familial, and hereditary inclusion body myositis — differences, genetics, onset, and prognosis.')
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: typesFaq.map(f => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: f.a,
+      },
+    })),
+  }
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+
       <div className="page-header">
         <h1>Types of Inclusion Body Myositis</h1>
         <p className="subtitle">Understanding the different forms of IBM — from common sporadic cases to rare hereditary variants</p>
@@ -173,6 +203,25 @@ export default function TypesPage() {
           respond to standard myositis treatment, seek evaluation at a specialized neuromuscular
           disease center.
         </div>
+
+        <div className="info-box info">
+          <strong>Related pages</strong>
+          <a href="/stages">Learn about disease stages</a> · <a href="/tips/early">Early stage tips</a> · <a href="/resources">Find a specialist</a>
+        </div>
+      </div>
+
+      <div className="card">
+        <h2>Frequently Asked Questions</h2>
+        {typesFaq.map((item, i) => (
+          <details key={i} style={{ marginBottom: 12, borderBottom: '1px solid var(--border-light)', paddingBottom: 12 }}>
+            <summary style={{ cursor: 'pointer', fontWeight: 600, color: 'var(--text)', fontSize: '0.95rem', padding: '4px 0' }}>
+              {item.q}
+            </summary>
+            <p style={{ marginTop: 8, fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.7 }}>
+              {item.a}
+            </p>
+          </details>
+        ))}
       </div>
     </>
   )

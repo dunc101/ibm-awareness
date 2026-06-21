@@ -1,4 +1,7 @@
+import { usePageTitle } from '../hooks/usePageTitle'
+
 export default function TipsMiddlePage() {
+  usePageTitle('Middle Stage Tips', 'Adaptive equipment, home modifications, driving, and dysphagia management for middle-stage IBM.')
   return (
     <>
       <div className="page-header">

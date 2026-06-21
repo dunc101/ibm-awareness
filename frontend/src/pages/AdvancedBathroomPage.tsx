@@ -1,4 +1,7 @@
+import { usePageTitle } from '../hooks/usePageTitle'
+
 export default function AdvancedBathroomPage() {
+  usePageTitle('Bathroom & Toileting', 'Transfer equipment, portable lifts, commodes, urinals, bidets, and bathroom modifications for IBM patients.')
   return (
     <>
       <div className="page-header">

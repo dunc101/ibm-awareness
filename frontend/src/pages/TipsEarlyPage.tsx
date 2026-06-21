@@ -1,4 +1,7 @@
+import { usePageTitle } from '../hooks/usePageTitle'
+
 export default function TipsEarlyPage() {
+  usePageTitle('Early Stage Tips', 'Exercise, energy conservation, workplace accommodations, and finding specialists for early-stage IBM.')
   return (
     <>
       <div className="page-header">

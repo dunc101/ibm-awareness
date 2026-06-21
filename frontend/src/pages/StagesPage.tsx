@@ -1,4 +1,7 @@
+import { usePageTitle } from '../hooks/usePageTitle'
+
 export default function StagesPage() {
+  usePageTitle('Disease Stages', 'Early, middle, and advanced stages of IBM — timeline, muscles affected, and care needs.')
   return (
     <>
       <div className="page-header">
@@ -176,6 +179,46 @@ export default function StagesPage() {
           Ensure respiratory monitoring, nutritional support, and appropriate caregiver training.
           Consider palliative care and advanced care planning.
         </div>
+
+        <div className="info-box info">
+          <strong>Related pages</strong>
+          <a href="/tips/early">Early stage tips</a> · <a href="/tips/middle">Middle stage tips</a> · <a href="/tips/advanced">Advanced stage tips</a> · <a href="/advanced">Advanced stage overview</a>
+        </div>
+      </div>
+
+      <div className="card">
+        <h2>Frequently Asked Questions</h2>
+        <details style={{ marginBottom: 12, borderBottom: '1px solid var(--border-light)', paddingBottom: 12 }}>
+          <summary style={{ cursor: 'pointer', fontWeight: 600, color: 'var(--text)', fontSize: '0.95rem', padding: '4px 0' }}>
+            How long does each stage of IBM last?
+          </summary>
+          <p style={{ marginTop: 8, fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.7 }}>
+            IBM does not follow a rigid timeline. Early stage typically spans years 0-5 from symptom onset,
+            middle stage years 5-10, and advanced stage 10+ years. However, progression varies significantly
+            between individuals — some plateau for extended periods before worsening.
+          </p>
+        </details>
+        <details style={{ marginBottom: 12, borderBottom: '1px solid var(--border-light)', paddingBottom: 12 }}>
+          <summary style={{ cursor: 'pointer', fontWeight: 600, color: 'var(--text)', fontSize: '0.95rem', padding: '4px 0' }}>
+            Will I definitely need a wheelchair?
+          </summary>
+          <p style={{ marginTop: 8, fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.7 }}>
+            Most IBM patients eventually require a wheelchair, but the timeline varies. Some remain
+            ambulatory with assistance for many years. A cane or walker is typically needed first,
+            followed by a wheelchair for longer distances, and eventually full-time wheelchair use.
+          </p>
+        </details>
+        <details style={{ marginBottom: 12, borderBottom: '1px solid var(--border-light)', paddingBottom: 12 }}>
+          <summary style={{ cursor: 'pointer', fontWeight: 600, color: 'var(--text)', fontSize: '0.95rem', padding: '4px 0' }}>
+            Can IBM be stopped from progressing?
+          </summary>
+          <p style={{ marginTop: 8, fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.7 }}>
+            Currently, there is no treatment that halts IBM progression. The disease is resistant to
+            corticosteroids and immunosuppressants that work for other myopathies. Physical therapy
+            and adaptive strategies can maintain function and quality of life. Active clinical trials
+            are investigating potential treatments.
+          </p>
+        </details>
       </div>
     </>
   )

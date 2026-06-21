@@ -1,4 +1,7 @@
+import { usePageTitle } from '../hooks/usePageTitle'
+
 export default function TipsAdvancedPage() {
+  usePageTitle('Advanced Stage Tips', 'Wheelchair selection, respiratory support, nutrition, pain management, and technology aids.')
   return (
     <>
       <div className="page-header">

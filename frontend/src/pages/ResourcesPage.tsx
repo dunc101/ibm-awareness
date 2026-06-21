@@ -1,4 +1,7 @@
+import { usePageTitle } from '../hooks/usePageTitle'
+
 export default function ResourcesPage() {
+  usePageTitle('Resources', 'TMA, NINDS, MDA, clinical trials, support groups, and specialist directories for IBM.')
   return (
     <>
       <div className="page-header">

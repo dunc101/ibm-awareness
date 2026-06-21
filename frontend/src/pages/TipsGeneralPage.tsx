@@ -1,4 +1,7 @@
+import { usePageTitle } from '../hooks/usePageTitle'
+
 export default function TipsGeneralPage() {
+  usePageTitle('General Tips', 'Explaining IBM to others, insurance navigation, support groups, clinical trials, and disability benefits.')
   return (
     <>
       <div className="page-header">

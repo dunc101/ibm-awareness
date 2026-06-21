@@ -1,11 +1,85 @@
-import { Link } from 'react-router-dom'
+import { usePageTitle } from '../hooks/usePageTitle'
+
+const faq = [
+  {
+    q: 'What is inclusion body myositis?',
+    a: 'Inclusion Body Myositis (IBM) is a rare, progressive muscle disease characterized by chronic muscle inflammation and weakness. It is the most common acquired muscle disease in adults over 50, affecting approximately 20,000 people in the United States. IBM causes both proximal weakness (thighs, making standing and climbing stairs difficult) and distal weakness (forearms and hands, making gripping and pinching difficult).',
+  },
+  {
+    q: 'Is IBM hereditary?',
+    a: 'Sporadic IBM (sIBM), the most common form, is NOT inherited — it occurs randomly. However, about 67% of patients carry a specific HLA gene combination that makes them genetically susceptible. Familial IBM (fIBM) is rare and involves siblings developing the disease, but it does not pass from generation to generation. Hereditary Inclusion Body Myopathies (hIBM) are a separate group of genetic muscle diseases.',
+  },
+  {
+    q: 'Is there a cure for IBM?',
+    a: 'As of 2024, there are no FDA-approved treatments specifically for IBM. The disease is notoriously resistant to corticosteroids and immunosuppressive drugs that work for other myopathies. Physical therapy and adaptive strategies are the mainstay of management. Active research is underway with promising clinical trials for rapamycin, BCG vaccine therapy, and other approaches.',
+  },
+  {
+    q: 'How fast does IBM progress?',
+    a: 'IBM progresses slowly over months to years. Most patients require assistive devices (cane, walker, wheelchair) within 5-10 years of symptom onset. However, the rate varies significantly between individuals — some plateau for years before worsening. IBM does not typically significantly shorten life expectancy, though complications like aspiration pneumonia can be serious.',
+  },
+  {
+    q: 'What is the life expectancy with IBM?',
+    a: 'IBM does not typically significantly reduce life expectancy in most patients. However, complications such as aspiration pneumonia (from swallowing difficulties), malnutrition, and respiratory muscle weakness can be fatal. Falls resulting in serious injuries are also a concern. With proper management and care, many patients live for decades after diagnosis.',
+  },
+  {
+    q: 'Why is IBM often misdiagnosed?',
+    a: 'IBM is frequently misdiagnosed as polymyositis, normal aging, fibromyalgia, ALS, or sarcopenia because it shares symptoms with these conditions and is relatively rare. The average diagnostic delay is 5-10 years. A muscle biopsy showing rimmed vacuoles and the anti-NT5C1A antibody test are key diagnostic tools, but they are not always ordered early.',
+  },
+  {
+    q: 'Can you drive with IBM?',
+    a: 'Many IBM patients can continue driving in the early and middle stages. However, as leg weakness progresses (affecting pedal control) and hand weakness worsens (affecting steering and grip), driving may become unsafe. Hand controls and spinner knobs can extend driving ability. Discuss driving safety with your doctor and consider a driving evaluation through your state\'s vocational rehabilitation program.',
+  },
+  {
+    q: 'Does IBM qualify for disability?',
+    a: 'Yes. IBM is listed under Section 11.15 (Disorders of the Peripheral Nervous System) in the SSA Blue Book for Social Security Disability Insurance (SSDI). The IBM Functional Rating Scale (available from The Myositis Association) can support your application. Apply as soon as you can no longer perform substantial work — the process typically takes 3-6 months.',
+  },
+  {
+    q: 'What exercises are safe with IBM?',
+    a: 'Exercise is the only current treatment recommendation for IBM and is safe when done appropriately. Walking at your own pace, aquatic therapy (water supports weight), light resistance training, balance training, and hand/finger exercises are all recommended. Start slowly, build over 6-12 weeks, and avoid overexertion — if muscle soreness hinders daily activities, you have done too much.',
+  },
+  {
+    q: 'What is the anti-cN1A antibody test?',
+    a: 'The anti-NT5C1A (anti-cN1A) antibody is a blood test strongly associated with IBM. It is positive in approximately 70-80% of IBM patients and helps distinguish IBM from other myopathies. It is not 100% specific (some non-IBM patients can test positive) but is a valuable diagnostic tool when combined with other findings.',
+  },
+]
 
 export default function HomePage() {
+  usePageTitle('Inclusion Body Myositis (IBM)', 'Comprehensive guide to IBM: types, stages, treatments, equipment, and resources for patients and caregivers.')
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map(f => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: f.a,
+      },
+    })),
+  }
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+
       <div className="page-header">
         <h1>Inclusion Body Myositis (IBM)</h1>
-        <p className="subtitle">Understanding the most common acquired muscle disease in adults over 50</p>
+        <p className="subtitle">The most common acquired muscle disease in adults over 50 — what you need to know</p>
+      </div>
+
+      <div className="card" style={{ background: 'var(--accent-soft)', borderLeft: '4px solid var(--accent)' }}>
+        <h2>Newly Diagnosed?</h2>
+        <p>
+          If you or a loved one has just been diagnosed with IBM, you probably have a lot of questions.
+          Here's where to start:
+        </p>
+        <ul>
+          <li><a href="/types">Understand your type of IBM</a> — sporadic, familial, or hereditary</li>
+          <li><a href="/stages">Learn about disease stages</a> — what to expect and how to prepare</li>
+          <li><a href="/tips/early">Early stage tips</a> — exercise, energy conservation, and finding specialists</li>
+          <li><a href="/resources">Find support</a> — The Myositis Association, clinical trials, and specialist directories</li>
+        </ul>
       </div>
 
       <div className="stat-row">
@@ -33,7 +107,7 @@ export default function HomePage() {
           Inclusion Body Myositis (IBM) is one of the idiopathic inflammatory myopathies (IIMs),
           a group of rare muscle diseases characterized by chronic, progressive muscle inflammation
           accompanied by muscle weakness. It is the most common inflammatory muscle disease in
-          older adults. The "inclusion body" in its name refers to a histological finding of
+          adults over 50. The "inclusion body" in its name refers to a histological finding of
           rimmed vacuoles — abnormal cellular structures containing aggregated proteins — visible
           in muscle tissue on biopsy.
         </p>
@@ -59,6 +133,29 @@ export default function HomePage() {
       </div>
 
       <div className="card">
+        <h2>Common Misdiagnoses</h2>
+        <p>
+          Because IBM is rare and shares symptoms with other conditions, it is frequently
+          misdiagnosed. If you've been told your symptoms are "just aging" or haven't responded
+          to treatment, consider asking your doctor about IBM.
+        </p>
+        <ul>
+          <li><strong>"Just aging" / Sarcopenia</strong> — The most common misdiagnosis. Progressive weakness after 50 is often dismissed as normal aging</li>
+          <li><strong>Polymyositis</strong> — IBM is often initially diagnosed as polymyositis, but IBM doesn't respond to the steroid treatment that works for polymyositis</li>
+          <li><strong>ALS (Lou Gehrig's disease)</strong> — A terrifying misdiagnosis; IBM progresses much more slowly than ALS</li>
+          <li><strong>Fibromyalgia</strong> — Muscle pain, fatigue, and weakness overlap significantly</li>
+          <li><strong>Cervical spinal stenosis</strong> — Weak hands and falling can mimic spinal cord compression</li>
+          <li><strong>Statins side effects</strong> — Muscle weakness from statins may be attributed to the medication rather than underlying IBM</li>
+        </ul>
+        <div className="info-box warning">
+          <strong>If you suspect misdiagnosis</strong>
+          Ask for a muscle biopsy and anti-NT5C1A blood test. These are the key diagnostic tools
+          for IBM. Seek evaluation at a neuromuscular disease center — general neurologists may
+          not have experience with IBM.
+        </div>
+      </div>
+
+      <div className="card">
         <h2>How IBM Affects the Body</h2>
         <p>
           IBM targets specific muscle groups in a characteristic pattern. In the lower body, the
@@ -72,15 +169,6 @@ export default function HomePage() {
           dysphagia — difficulty with both solids and liquids. In advanced stages, respiratory
           muscles can weaken, potentially requiring ventilatory support.
         </p>
-
-        <div className="info-box info">
-          <strong>Why IBM is often misdiagnosed</strong>
-          Due to its rarity and overlapping symptoms with other conditions, IBM is frequently
-          misdiagnosed as polymyositis, normal aging, or deconditioning. The average diagnostic
-          delay is 5-10 years from symptom onset. If you or a loved one experience progressive
-          muscle weakness, especially with the characteristic pattern of thigh and hand weakness,
-          seek evaluation at a neuromuscular disease center.
-        </div>
       </div>
 
       <div className="card">
@@ -91,9 +179,9 @@ export default function HomePage() {
           and management.
         </p>
         <div style={{ marginTop: 16 }}>
-          <Link to="/types" style={{ color: 'var(--primary)', fontWeight: 600 }}>
+          <a href="/types" style={{ color: 'var(--primary)', fontWeight: 600 }}>
             Learn about all types of IBM →
-          </Link>
+          </a>
         </div>
       </div>
 
@@ -105,9 +193,9 @@ export default function HomePage() {
           stages — each with distinct challenges and management strategies.
         </p>
         <div style={{ marginTop: 16 }}>
-          <Link to="/stages" style={{ color: 'var(--primary)', fontWeight: 600 }}>
+          <a href="/stages" style={{ color: 'var(--primary)', fontWeight: 600 }}>
             Explore disease stages →
-          </Link>
+          </a>
         </div>
       </div>
 
@@ -127,10 +215,24 @@ export default function HomePage() {
           cutting-edge treatments.
         </div>
         <div style={{ marginTop: 16 }}>
-          <Link to="/resources" style={{ color: 'var(--primary)', fontWeight: 600 }}>
+          <a href="/resources" style={{ color: 'var(--primary)', fontWeight: 600 }}>
             Find resources and support →
-          </Link>
+          </a>
         </div>
+      </div>
+
+      <div className="card">
+        <h2>Frequently Asked Questions</h2>
+        {faq.map((item, i) => (
+          <details key={i} style={{ marginBottom: 12, borderBottom: '1px solid var(--border-light)', paddingBottom: 12 }}>
+            <summary style={{ cursor: 'pointer', fontWeight: 600, color: 'var(--text)', fontSize: '0.95rem', padding: '4px 0' }}>
+              {item.q}
+            </summary>
+            <p style={{ marginTop: 8, fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.7 }}>
+              {item.a}
+            </p>
+          </details>
+        ))}
       </div>
     </>
   )

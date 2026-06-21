@@ -1,4 +1,7 @@
+import { usePageTitle } from '../hooks/usePageTitle'
+
 export default function AdvancedTravelPage() {
+  usePageTitle('Travel Tips', 'Airline travel, accessible hotels, emergency preparedness, and TMA resources for traveling with IBM.')
   return (
     <>
       <div className="page-header">

@@ -1,4 +1,7 @@
+import { usePageTitle } from '../hooks/usePageTitle'
+
 export default function AdvancedOverviewPage() {
+  usePageTitle('Advanced Stage Overview', 'Comprehensive support for wheelchair-bound IBM patients — emergency preparedness and key challenges.')
   return (
     <>
       <div className="page-header">
