@@ -34,7 +34,9 @@ export default function Footer() {
       <div className="footer-bottom">
         IBM Awareness — Built with care for the IBM community — Not a substitute for medical advice
         <div style={{ marginTop: 8, opacity: 0.5, fontSize: '0.72rem' }}>
-          Visitors: <span data-goatcounter-uptime="ibm-awareness" data-goatcounter-display-attribution="false" data-goatcounter-format="arrow"></span>
+          <a href="https://app.netlify.com/projects/ibm-awareness/analytics" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>
+            Site Analytics
+          </a>
         </div>
       </div>
     </footer>
