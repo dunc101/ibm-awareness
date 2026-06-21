@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { useTheme } from '../context/ThemeContext'
 
@@ -11,8 +10,12 @@ const navItems = [
   { to: '/resources', label: 'Resources' },
 ]
 
-export default function TopNav() {
-  const [mobileOpen, setMobileOpen] = useState(false)
+interface TopNavProps {
+  mobileOpen: boolean
+  onToggle: () => void
+}
+
+export default function TopNav({ mobileOpen, onToggle }: TopNavProps) {
   const { theme, toggle } = useTheme()
 
   return (
@@ -41,7 +44,7 @@ export default function TopNav() {
         </button>
         <button
           className="mobile-menu-btn"
-          onClick={() => setMobileOpen(!mobileOpen)}
+          onClick={onToggle}
           aria-label="Toggle menu"
         >
           {mobileOpen ? '✕' : '☰'}

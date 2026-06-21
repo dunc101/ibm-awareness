@@ -243,13 +243,13 @@ export default function AdvancedBathroomPage() {
         <div className="tip-item">
           <div className="tip-icon">✦</div>
           <div className="tip-content">
-            <h4>Prism Medical Ceiling Lift</h4>
+            <h4>Prism Medical Portable Ceiling Lift</h4>
             <p>
               Prism Medical makes portable ceiling lift motors (~20 lbs, 440 lb capacity). Sold
-              through medical equipment dealers. Replacement batteries available on Amazon ($20-80).
+              through medical equipment dealers. Contact a local DME provider for pricing and availability.
             </p>
             <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
-              <a href="https://www.prismmedical.com" target="_blank" rel="noopener noreferrer">Visit Prism Medical</a>
+              <a href="https://www.google.com/search?q=Prism+Medical+portable+ceiling+lift" target="_blank" rel="noopener noreferrer">Search for Prism Medical dealers</a>
             </p>
           </div>
         </div>

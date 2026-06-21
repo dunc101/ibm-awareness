@@ -9,7 +9,7 @@ export default function Layout() {
 
   return (
     <>
-      <TopNav />
+      <TopNav mobileOpen={sidebarOpen} onToggle={() => setSidebarOpen(o => !o)} />
       <div className="layout">
         <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
         <main className="main-content">
