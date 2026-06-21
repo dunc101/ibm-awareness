@@ -15,6 +15,9 @@ import AdvancedEquipmentPage from './pages/AdvancedEquipmentPage'
 import AdvancedCaregivingPage from './pages/AdvancedCaregivingPage'
 import AdvancedBathroomPage from './pages/AdvancedBathroomPage'
 import ResourcesPage from './pages/ResourcesPage'
+import JustDiagnosedPage from './pages/JustDiagnosedPage'
+import BlogPage from './pages/BlogPage'
+import BlogPostPage from './pages/BlogPostPage'
 
 function App() {
   return (
@@ -36,6 +39,9 @@ function App() {
             <Route path="/advanced/caregiving" element={<AdvancedCaregivingPage />} />
             <Route path="/advanced/bathroom" element={<AdvancedBathroomPage />} />
             <Route path="/resources" element={<ResourcesPage />} />
+            <Route path="/just-diagnosed" element={<JustDiagnosedPage />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/blog/:slug" element={<BlogPostPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

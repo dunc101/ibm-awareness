@@ -2,6 +2,12 @@ import { NavLink, useLocation } from 'react-router-dom'
 
 const sections = [
   {
+    title: 'Getting Started',
+    items: [
+      { to: '/just-diagnosed', label: 'Just Diagnosed' },
+    ],
+  },
+  {
     title: 'About IBM',
     items: [
       { to: '/', label: 'Overview' },
@@ -32,6 +38,7 @@ const sections = [
     title: 'Support',
     items: [
       { to: '/resources', label: 'Resources' },
+      { to: '/blog', label: 'Blog' },
     ],
   },
 ]
