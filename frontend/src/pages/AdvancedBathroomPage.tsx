@@ -3,7 +3,7 @@ export default function AdvancedBathroomPage() {
     <>
       <div className="page-header">
         <h1>Bathroom & Toileting</h1>
-        <p className="subtitle">One of the hardest daily challenges for wheelchair-bound IBM patients — and how to manage it safely</p>
+        <p className="subtitle">One of the hardest daily challenges for wheelchair-bound IBM patients — and the equipment that can help</p>
       </div>
 
       <div className="info-box danger">
@@ -22,336 +22,296 @@ export default function AdvancedBathroomPage() {
         <ul>
           <li><strong>Quadriceps weakness:</strong> You cannot push up from a seated position — the muscles that straighten your legs don't have the strength</li>
           <li><strong>Arm weakness:</strong> You cannot reliably support your body weight on your arms for transfers — the muscles that push you up from armrests are weakened</li>
-          <li><strong>Toilet height:</strong> Standard toilets are 15 inches high; wheelchair seats are typically 19-20 inches. This height mismatch means you're transferring *down* — harder and more dangerous than transferring up</li>
+          <li><strong>Toilet height:</strong> Standard toilets are 15 inches high; wheelchair seats are typically 19-20 inches. This height mismatch means you're transferring <em>down</em> — harder and more dangerous than transferring up</li>
           <li><strong>Narrow base:</strong> Toilet seats are much narrower than wheelchair seats, giving you less surface area to land on</li>
-          <li><strong>Wet surfaces:</strong> Bathroom floors are often tile — slippery when wet, and wetness is unavoidable near toilets and showers</li>
+          <li><strong>Wet surfaces:</strong> Bathroom floors are often tile — slippery when wet</li>
           <li><strong>Tight spaces:</strong> Most residential bathrooms are too small for a wheelchair to maneuver alongside the toilet</li>
         </ul>
       </div>
 
+      {/* ═══════════════════════════════════════════════════════════════
+          THE HARD TRUTH: WHEN YOU CANNOT TRANSFER AT ALL
+         ═══════════════════════════════════════════════════════════════ */}
       <div className="card">
-        <h2>Toilet Solutions</h2>
-
-        <h3>1. Raised Toilet Seats</h3>
+        <h2>The Hard Truth: When You Cannot Transfer</h2>
         <p>
-          The simplest and cheapest solution. A raised seat adds 2-6 inches to toilet height,
-          reducing the distance you need to lower yourself and making it easier to sit down
-          and stand up.
-        </p>
-        <ul>
-          <li><strong>Standard raised seat:</strong> $25-60 — adds height, no installation needed</li>
-          <li><strong>Raised seat with arms:</strong> $40-100 — provides grab bars on both sides for support during transfer</li>
-          <li><strong>Weight capacity:</strong> Check ratings — most support 250-300 lbs</li>
-          <li><strong>Limitation:</strong> Still requires some ability to bear weight on legs and arms</li>
-        </ul>
-
-        <h3>2. Toilet Frame / Safety Frame</h3>
-        <p>
-          A freestanding frame that surrounds the toilet, providing armrests on both sides.
-          More stable than a raised seat alone.
-        </p>
-        <ul>
-          <li><strong>Cost:</strong> $60-200</li>
-          <li><strong>Advantage:</strong> Sturdy armrests for push-up transfers; some fold for travel</li>
-          <li><strong>Adjustable:</strong> Height and width adjustable to fit different toilets and users</li>
-        </ul>
-
-        <h3>3. Commode Chairs</h3>
-        <p>
-          A standalone chair with a toilet seat and bucket, placed over or next to the toilet.
-          Eliminates the transfer to a standard toilet entirely.
-        </p>
-        <ul>
-          <li><strong>Standard commode:</strong> $50-150 — placed over the toilet or used standalone</li>
-          <li><strong>Rolling commode/shower chair:</strong> $150-500 — wheels from bedroom to bathroom, serves as both commode and shower chair</li>
-          <li><strong>Bariatric commode:</strong> $100-300 — wider seat, higher weight capacity (up to 1000 lbs)</li>
-        </ul>
-
-        <h3>4. Over-Toilet Wheelchair / Hemiplegic Toilet Chair</h3>
-        <p>
-          A wheelchair designed specifically to roll over a standard toilet. The seat has a
-          cutout that aligns with the toilet bowl.
-        </p>
-        <ul>
-          <li><strong>Cost:</strong> $300-800</li>
-          <li><strong>Advantage:</strong> No transfer needed — roll directly over the toilet</li>
-          <li><strong>Consideration:</strong> Requires adequate bathroom space for the chair to maneuver</li>
-        </ul>
-
-        <h3>5. Power Toilet Lift</h3>
-        <p>
-          A motorized seat that lifts you from a sitting to a near-standing position and
-          lowers you back down. The gold standard for patients with severe weakness.
-        </p>
-        <ul>
-          <li><strong>Cost:</strong> $1,500-4,000</li>
-          <li><strong>Advantage:</strong> Minimal effort required from patient or caregiver; preserves dignity</li>
-          <li><strong>Insurance:</strong> May be covered as DME (durable medical equipment) with physician documentation</li>
-          <li><strong>Installation:</strong> Replaces existing toilet seat; requires electrical outlet nearby</li>
-        </ul>
-      </div>
-
-      <div className="card">
-        <h2>Showering Solutions</h2>
-        <p>
-          Showering is arguably even harder than toileting because of the added water hazard.
-          Wet surfaces, steam reducing visibility, and the need to manage soap and water while
-          weak creates a high-risk environment.
-        </p>
-
-        <h3>Option 1: Roll-In Shower with Shower Chair</h3>
-        <p>
-          The best solution for home installation. A roll-in shower has no curb or lip — the
-          wheelchair rolls directly into the shower area.
-        </p>
-        <ul>
-          <li><strong>Shower chair/bench:</strong> Padded, height-adjustable seat inside the shower — $50-300</li>
-          <li><strong>Rolling shower/commode chair:</strong> Wheels from bedroom to shower, rolls into roll-in shower, doubles as commode — $200-800</li>
-          <li><strong>Grab bars:</strong> Install at entry, inside shower, and near toilet — must be screwed into wall studs, not suction cups — $20-60 each</li>
-          <li><strong>Handheld showerhead:</strong> Essential for seated showering — allows you to direct water where needed — $20-80</li>
-          <li><strong>Non-slip mats:</strong> Inside and outside the shower — $10-30</li>
-        </ul>
-
-        <div className="info-box info">
-          <strong>Roll-in shower dimensions</strong>
-          ADA guidelines specify a minimum 60" x 30" shower area with no curb. A wheelchair needs
-          at least 32" of clear width to enter. If remodeling, plan for a shower that accommodates
-          both the wheelchair and a caregiver assisting from outside.
-        </div>
-
-        <h3>Option 2: Tub-Shower Transfer Bench</h3>
-        <p>
-          For homes with a standard bathtub. The bench straddles the tub wall — you sit on the
-          bench outside the tub, then slide across into the tub area.
-        </p>
-        <ul>
-          <li><strong>Cost:</strong> $40-150</li>
-          <li><strong>Advantage:</strong> No renovation needed; works with existing tub</li>
-          <li><strong>Limitation:</strong> Still requires sliding transfer, which needs some arm strength</li>
-        </ul>
-
-        <h3>Option 3: Walk-In Tub</h3>
-        <p>
-          A bathtub with a door that opens inward, allowing you to step or roll in without
-          climbing over a tub wall.
-        </p>
-        <ul>
-          <li><strong>Cost:</strong> $1,500-8,000 installed</li>
-          <li><strong>Advantage:</strong> Sealed door prevents water spillage; built-in seat</li>
-          <li><strong>Limitation:</strong> Must be able to transfer into the tub seat; door may be difficult to operate with weak hands</li>
-        </ul>
-
-        <h3>Option 4: Bed Bath</h3>
-        <p>
-          For patients who cannot safely transfer to any shower setup. A caregiver performs
-          a complete bed bath using basin, warm water, and no-rinse cleansing products.
-        </p>
-        <ul>
-          <li><strong>Products:</strong> No-rinse body wash, shampoo caps, disposable washcloths — available from medical supply stores</li>
-          <li><strong>Technique:</strong> Warm water, systematic cleaning, thorough drying to prevent skin breakdown</li>
-          <li><strong>Frequency:</strong> Can be done daily; focus on hygiene-critical areas</li>
-        </ul>
-
-        <h3>Option 5: Portable Shower</h3>
-        <p>
-          A freestanding shower enclosure with a drain pan, designed for wheelchair users.
-          Can be set up in any room with access to a water source and drain.
-        </p>
-        <ul>
-          <li><strong>Cost:</strong> $200-1,500</li>
-          <li><strong>Advantage:</strong> No renovation required; can be moved or taken when traveling</li>
-          <li><strong>Example:</strong> Padded Shower Chair + portable shower curtain enclosure</li>
-        </ul>
-      </div>
-
-      <div className="card">
-        <h2>Transfer Techniques</h2>
-        <p>
-          How you move between wheelchair and toilet/shower matters as much as the equipment.
-          Poor technique causes injuries to both patient and caregiver.
-        </p>
-
-        <h3>Sliding Board Transfer</h3>
-        <ul>
-          <li>Place a sliding board (transfer board) between the wheelchair and toilet/shower chair</li>
-          <li>Lean away from the board, slide across using arm strength</li>
-          <li>Requires some upper body strength — may not be possible in advanced IBM</li>
-          <li><strong>Cost:</strong> $15-60 for a basic board</li>
-        </ul>
-
-        <h3>Pivot Transfer</h3>
-        <ul>
-          <li>For patients who can bear some weight on their legs</li>
-          <li>Standee (or nearly standing), pivot, and lower onto target surface</li>
-          <li>Requires strong caregiver support if patient cannot self-support</li>
-          <li>Use a gait belt for caregiver to hold — never grab the patient's arms or clothing</li>
-        </ul>
-
-        <h3>Full Lift Transfer</h3>
-        <ul>
-          <li>For patients who cannot bear weight at all</li>
-          <li>Caregiver uses a mechanical lift (Hoyer lift) or performs a manual lift</li>
-          <li><strong>Ceiling track lift:</strong> Installed in bathroom — the safest option for both patient and caregiver</li>
-          <li><strong>Portable Hoyer lift:</strong> $200-600 — can be moved between rooms</li>
-          <li><strong>Manual lift:</strong> Only for trained caregivers with proper technique — high injury risk</li>
-        </ul>
-
-        <div className="info-box warning">
-          <strong>Caregiver injury is common</strong>
-          Back injuries from lifting are the #1 cause of caregiver disability. A mechanical lift
-          is not a luxury — it's a necessity. Medicare and most insurance cover Hoyer lifts when
-          prescribed by a physician.
-        </div>
-      </div>
-
-      <div className="card">
-        <h2>Bathroom Modifications</h2>
-        <h3>Essential</h3>
-        <ul>
-          <li><strong>Grab bars:</strong> Near toilet (both sides), inside shower, at shower entry, and along bathroom walls — screwed into studs, NOT suction cups — $20-60 each, professional installation recommended</li>
-          <li><strong>Non-slip flooring:</strong> Non-slip tiles or adhesive strips on existing tile — $1-5/sq ft for strips</li>
-          <li><strong>Handheld showerhead:</strong> Essential for seated showering — $20-80</li>
-          <li><strong>Shower chair or bench:</strong> Height-adjustable, padded, with back support — $50-300</li>
-          <li><strong>Raised toilet seat or toilet frame:</strong> Reduces transfer distance — $25-200</li>
-        </ul>
-
-        <h3>Strongly Recommended</h3>
-        <ul>
-          <li><strong>Roll-in shower:</strong> Curbless entry for wheelchair access — $1,000-5,000 to install</li>
-          <li><strong>Ceiling track lift:</strong> Motorized lift on ceiling-mounted track — $3,000-8,000 installed, but eliminates caregiver lifting entirely</li>
-          <li><strong>Widened doorway:</strong> Minimum 32" clearance for wheelchair — $200-1,000 per door</li>
-          <li><strong>Anti-scald valves:</strong> Prevents burns from temperature fluctuations — $30-100</li>
-          <li><strong>Nightlight:</strong> Motion-activated, plug-in — $10-20</li>
-        </ul>
-
-        <h3>If Remodeling</h3>
-        <ul>
-          <li>Remove all thresholds and lips between bathroom and hallway</li>
-          <li>Install blocking in walls during construction for future grab bar installation</li>
-          <li>Consider a wet room design — entire bathroom is waterproofed, no separate shower enclosure needed</li>
-          <li>Install GFCI outlets near water sources</li>
-          <li>Consider a bidet seat — reduces need for wiping (difficult with weak arms)</li>
-        </ul>
-      </div>
-
-      <div className="card">
-        <h2>The Home vs. Travel Gap</h2>
-        <p>
-          At home, you may have a ceiling track lift, a Hoyer lift, a Molift, or other full-size
-          patient lifting equipment. These are large, heavy, and permanently installed. They work
-          great — until you leave the house.
-        </p>
-        <p style={{ marginTop: 10 }}>
-          ADA-rated hotels, even those labeled "accessible," typically offer nothing beyond a grab bar
-          and maybe a roll-in shower. They do not provide patient lifts, shower/commode chairs, or
-          any transfer equipment. You must bring your own or arrange rental in advance.
+          If you or your loved one has reached the point where they <strong>cannot transfer from a
+          power wheelchair to a toilet or shower without a mechanical lift</strong>, the options
+          become significantly more limited — especially for travel.
         </p>
         <div className="info-box danger">
-          <strong>The reality</strong>
-          If your loved one cannot transfer from wheelchair to toilet without a lift, and you
-          travel without one, you are relying on caregiver manual lifts — which are dangerous
-          for both the caregiver and patient. Equipment is not optional for travel; it is a
-          safety requirement.
+          <strong>The reality for advanced IBM</strong>
+          At home, you may have a ceiling track lift or a full-size Hoyer that makes transfers
+          safe. But those are bolted to the ceiling or weigh 70+ lbs. When you travel, you face
+          a harsh reality: <strong>most hotels, even ADA-rated ones, provide zero transfer
+          equipment</strong>. They have grab bars and maybe a roll-in shower — but nothing to
+          actually move a person who cannot move themselves.
         </div>
+        <p>
+          This is one of the biggest barriers to travel for advanced IBM patients. The equipment
+          that makes daily life possible at home simply does not exist in portable, travel-friendly
+          form — at least not yet. Here's what <em>does</em> exist, with honest assessments:
+        </p>
       </div>
 
+      {/* ═══════════════════════════════════════════════════════════════
+          PORTABLE PATIENT LIFTS
+         ═══════════════════════════════════════════════════════════════ */}
       <div className="card">
-        <h2>Portable Patient Lifts</h2>
+        <h2>Portable Patient Lifts — What Actually Exists</h2>
         <p>
-          Portable lifts are smaller, lighter, and foldable versions of the full-size lifts you
-          may use at home. None are as easy as a ceiling lift, but they make travel possible.
+          The market for portable patient lifts is small. Most lifts are designed for home or
+          facility use — heavy, bulky, and not made for travel. Here's what's available, with
+          honest assessments:
         </p>
 
-        <h3>Electric Portable Lifts</h3>
+        <h3>Full-Body Sling Lifts (Best for Patients Who Cannot Help)</h3>
+        <p>
+          These are the lifts that can pick someone up who has <strong>zero ability to assist</strong>.
+          A sling wraps around the patient, and the lift does all the work. The problem: they're
+          still heavy.
+        </p>
+
         <div className="tip-item">
           <div className="tip-icon">1</div>
           <div className="tip-content">
-            <h4>VOCIC AY06 Electric Transfer Lift — ~$810</h4>
+            <h4>Molift Smart 150 — ~$3,998</h4>
             <p>
-              Best overall for travel. Folds for car trunk transport, weighs ~50 lbs, 330 lb
-              capacity. Battery-powered lift with sling. Fits in most car trunks when folded.
-              This is the closest thing to a portable Molift with electric assist.
+              The gold standard for portable full-body lifts. <strong>Weight: 45 lbs.</strong> Capacity: 330 lbs.
+              Folds without tools. Battery-powered. Used in hospitals worldwide. The 45 lbs is still heavy
+              for a caregiver to load into a car, but it's the lightest full-body sling lift of its class.
+              Works with Molift slings for bed, wheelchair, and shower transfers.
+            </p>
+            <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
+              <a href="https://www.amazon.com/s?k=Molift+Smart+150" target="_blank" rel="noopener noreferrer">View on Amazon</a> ·
+              <a href="https://www.youtube.com/results?search_query=Molift+Smart+150+demo" target="_blank" rel="noopener noreferrer" style={{ marginLeft: 6 }}>Watch demo videos</a>
             </p>
           </div>
         </div>
+
         <div className="tip-item">
           <div className="tip-icon">2</div>
           <div className="tip-content">
-            <h4>ProHeal Portable Patient Lift — ~$1,600</h4>
+            <h4>Hoyer Advance Electric (E340) — ~$2,518</h4>
             <p>
-              Compact folding design, 400 lb capacity. More heavy-duty than the VOCIC but also
-              more expensive. Better for heavier patients or frequent travel.
+              Foldable, battery-powered. <strong>Weight: 116 lbs.</strong> Capacity: 400 lbs. Significantly
+              heavier than the Molift. At 116 lbs, it is NOT practical for travel — this is a
+              home-use lift only.
+            </p>
+            <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
+              <a href="https://www.amazon.com/s?k=Hoyer+Advance+Electric+E340" target="_blank" rel="noopener noreferrer">View on Amazon</a> ·
+              <a href="https://www.youtube.com/results?search_query=Hoyer+Advance+Electric+lift+demo" target="_blank" rel="noopener noreferrer" style={{ marginLeft: 6 }}>Watch demo videos</a>
             </p>
           </div>
         </div>
+
         <div className="tip-item">
           <div className="tip-icon">3</div>
           <div className="tip-content">
-            <h4>Vive Hydraulic Portable Lift — ~$610</h4>
+            <h4>VOCIC Electric Transfer Lift — ~$1,000</h4>
             <p>
-              Manual hydraulic operation (no battery needed), 400 lb capacity, includes sling.
-              Heavier than electric options but no risk of battery failure. Good backup option.
+              Budget option. <strong>Weight: ~35 lbs.</strong> Capacity: 330 lbs. Folds for transport. Less
+              established brand than Molift/Hoyer, but significantly cheaper. Mixed reviews on durability.
+            </p>
+            <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
+              <a href="https://www.amazon.com/s?k=VOCIC+electric+transfer+lift" target="_blank" rel="noopener noreferrer">View on Amazon</a>
             </p>
           </div>
         </div>
 
-        <h3>Manual Transfer Chairs</h3>
+        <h3>Sit-to-Stand Lifts (Require Some Patient Strength)</h3>
+        <p>
+          These lifts help a patient who can <em>partially</em> bear weight stand up and pivot.
+          <strong> They do NOT work for patients who cannot bear any weight on their legs.</strong>
+          If your loved one's quadriceps are too weak to bear weight at all, skip these.
+        </p>
+
         <div className="tip-item">
           <div className="tip-icon">4</div>
           <div className="tip-content">
-            <h4>Seveni Transfer Chair — ~$308</h4>
+            <h4>Molift Raiser Pro — ~$700</h4>
             <p>
-              Lightest option. Alloy steel, manual, 275 lb capacity. Disassembles for travel.
-              Not electric — requires caregiver to operate the mechanical lift mechanism. Good
-              for caregivers with some upper body strength.
+              Stand-assist lift for bed ↔ wheelchair ↔ shower transfers. <strong>Weight: ~35 lbs.</strong>
+              Capacity: 375 lbs. Requires the patient to have some leg and upper body strength to participate
+              in the transfer. More affordable than the Smart 150 but limited to patients who can partially help.
+            </p>
+            <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
+              <a href="https://www.amazon.com/s?k=Molift+Raiser+Pro" target="_blank" rel="noopener noreferrer">View on Amazon</a> ·
+              <a href="https://www.youtube.com/results?search_query=Molift+Raiser+transfer+demo" target="_blank" rel="noopener noreferrer" style={{ marginLeft: 6 }}>Watch demo videos</a>
             </p>
           </div>
         </div>
 
-        <h3>Stand-Assist Devices</h3>
-        <p>
-          For patients who still have some leg strength but cannot push up independently.
-          These devices provide partial lift assistance.
-        </p>
         <div className="tip-item">
           <div className="tip-icon">5</div>
           <div className="tip-content">
-            <h4>Etac Turner PRO — ~$390</h4>
+            <h4>Invacare Get-U-Up GHS350 — ~$1,173</h4>
             <p>
-              Stand-assist transfer aid, 440 lb capacity. Requires some leg strength to use.
-              Compact and foldable for travel.
+              Sit-to-stand patient lift with standing sling. <strong>Weight: ~55 lbs.</strong> Capacity: 350 lbs.
+              Hydraulic operation. Designed for patients who can partially bear weight. A realistic
+              sit-to-stand option from a major manufacturer.
+            </p>
+            <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
+              <a href="https://www.amazon.com/s?k=Invacare+Get+U+Up+GHS350" target="_blank" rel="noopener noreferrer">View on Amazon</a> ·
+              <a href="https://www.youtube.com/results?search_query=Invacare+sit+to+stand+patient+lift" target="_blank" rel="noopener noreferrer" style={{ marginLeft: 6 }}>Watch demo videos</a>
             </p>
           </div>
         </div>
+
         <div className="tip-item">
           <div className="tip-icon">6</div>
           <div className="tip-content">
-            <h4>Carex Uplift Premium Seat Assist — ~$147-157</h4>
+            <h4>Etac Turner PRO — ~$390</h4>
             <p>
-              Pneumatic (gas-spring) seat cushion that provides 70% lift assistance. Sits on
-              any chair or toilet — the patient sits down, and the cushion gently lifts them
-              back up when they lean forward. No batteries, no assembly. 230-350 lb capacity.
-              Excellent for toilets and dining chairs.
+              Pivot transfer aid. <strong>Weight: ~15 lbs.</strong> Capacity: 440 lbs. The lightest option,
+              but requires the patient to be able to bear weight and pivot. Not suitable for patients
+              who cannot stand at all.
+            </p>
+            <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
+              <a href="https://www.amazon.com/s?k=Etac+Turner+PRO" target="_blank" rel="noopener noreferrer">View on Amazon</a> ·
+              <a href="https://www.youtube.com/results?search_query=Etac+Turner+transfer+demo" target="_blank" rel="noopener noreferrer" style={{ marginLeft: 6 }}>Watch demo videos</a>
             </p>
           </div>
         </div>
+
+        <h3>Ultra-Light Options (Floor-to-Seat Only)</h3>
+        <p>
+          These are NOT full-body lifts. They help someone who has fallen to the floor get back
+          up to a seated position. Useful as a backup, but they cannot transfer from wheelchair
+          to toilet.
+        </p>
+
         <div className="tip-item">
           <div className="tip-icon">7</div>
           <div className="tip-content">
-            <h4>Personal Lifting Cushion — ~$399</h4>
+            <h4>SuperHandy GoRise LT — ~$380-450</h4>
             <p>
-              Inflatable cushion that lifts from floor level to 24 inches. 550 lb capacity.
-              Useful for emergency floor-to-chair transfers if a patient falls.
+              The lightest electric lift on the market at <strong>19 lbs</strong>. Waterproof (IP68).
+              Folds flat. Lifts from floor level (2") to 20". Capacity: 330 lbs. Great for emergency
+              floor recovery, but cannot do wheelchair-to-toilet transfers.
+            </p>
+            <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
+              <a href="https://www.amazon.com/s?k=SuperHandy+GoRise+LT" target="_blank" rel="noopener noreferrer">View on Amazon</a> ·
+              <a href="https://www.youtube.com/results?search_query=SuperHandy+GoRise+lift+review" target="_blank" rel="noopener noreferrer" style={{ marginLeft: 6 }}>Watch review videos</a>
             </p>
           </div>
         </div>
+
+        <div className="info-box warning">
+          <strong>The honest answer for travel</strong>
+          If your loved one cannot transfer from a power wheelchair without a full-body lift,
+          <strong> travel is extremely difficult</strong>. The Molift Smart 150 (45 lbs, $4K) is
+          the lightest real option, but loading it into a car requires a strong caregiver. There
+          is no portable lift on the market that is both lightweight AND capable of lifting a
+          person from a power wheelchair. This is a gap in the market that desperately needs
+          to be filled.
+        </div>
       </div>
 
+      {/* ═══════════════════════════════════════════════════════════════
+          HOME CEILING LIFTS
+         ═══════════════════════════════════════════════════════════════ */}
+      <div className="card">
+        <h2>Home Ceiling Lifts — SureHands and Others</h2>
+        <p>
+          For home use, a ceiling-mounted lift system is the gold standard. It eliminates
+          caregiver lifting entirely — the patient is suspended from a motorized unit that
+          travels along a track mounted to the ceiling.
+        </p>
+
+        <div className="tip-item">
+          <div className="tip-icon">✦</div>
+          <div className="tip-content">
+            <h4>SureHands Ceiling Lift System</h4>
+            <p>
+              SureHands (surehands.com) makes ceiling-mounted lift systems with a 15-year design life.
+              The motor unit weighs only <strong>17.5 lbs</strong> and can be moved between rooms using
+              their "Tarzan" connection — a portable track section that swings between rooms under
+              doorways, no doorway modifications needed. Capacity: 400-660 lbs depending on model.
+            </p>
+            <p>
+              <strong>Pricing:</strong> Custom quote required. Typical financing: ~$161/month.
+              Contact: (800) 724-5305 or surehands.com.
+            </p>
+            <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
+              <a href="https://www.surehands.com/products/ceiling-lifts" target="_blank" rel="noopener noreferrer">Visit SureHands</a> ·
+              <a href="https://www.youtube.com/results?search_query=SureHands+ceiling+lift+review" target="_blank" rel="noopener noreferrer" style={{ marginLeft: 6 }}>Watch demo videos</a>
+            </p>
+          </div>
+        </div>
+
+        <div className="tip-item">
+          <div className="tip-icon">✦</div>
+          <div className="tip-content">
+            <h4>Prism Medical Ceiling Lift</h4>
+            <p>
+              Prism Medical makes portable ceiling lift motors (~20 lbs, 440 lb capacity). Sold
+              through medical equipment dealers. Replacement batteries available on Amazon ($20-80).
+            </p>
+            <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
+              <a href="https://www.prismmedical.com" target="_blank" rel="noopener noreferrer">Visit Prism Medical</a>
+            </p>
+          </div>
+        </div>
+
+        <div className="info-box info">
+          <strong>Ceiling lifts don't travel</strong>
+          A ceiling lift is a home installation — it cannot go with you. For travel, you need a
+          portable floor lift (see above) or you need to stay in a facility that has lift equipment.
+        </div>
+      </div>
+
+      {/* ═══════════════════════════════════════════════════════════════
+          RENTAL AND TRIAL OPTIONS
+         ═══════════════════════════════════════════════════════════════ */}
+      <div className="card">
+        <h2>Renting vs. Buying Equipment</h2>
+        <p>
+          Patient lifts are expensive. Before spending $4,000 on a Molift, consider these options:
+        </p>
+
+        <h3>Equipment Rental</h3>
+        <ul>
+          <li><strong>Local DME (Durable Medical Equipment) companies</strong> — Search "patient lift rental near me" or "DME rental [your city]". Most local DME companies rent Hoyer-style lifts for $100-200/month</li>
+          <li><strong>Apria Healthcare</strong> — National DME rental company (apria.com). Rents beds, lifts, wheelchairs</li>
+          <li><strong>Medline / Lincare</strong> — Other national DME suppliers with rental programs</li>
+          <li><strong>Insurance coverage</strong> — Medicare Part B covers DME rental with a doctor's prescription. Many commercial insurers also cover rentals</li>
+        </ul>
+
+        <h3>Try Before You Buy</h3>
+        <ul>
+          <li><strong>Amazon 30-day return policy</strong> — Buy a lift, try it at home, return if it doesn't work. This is the most practical "try before you buy" option for most families</li>
+          <li><strong>SpinLife (1-800-628-6347)</strong> — Medical equipment retailer with product experts who can consult over the phone before you buy</li>
+          <li><strong>Rehabmart (1-800-827-8283)</strong> — Another major retailer with consultation services</li>
+          <li><strong>Physical/Occupational therapist</strong> — May have equipment in clinic that you can try during a therapy session</li>
+          <li><strong>Ask about floor models</strong> — Some DME providers sell demo units at a discount</li>
+        </ul>
+
+        <h3>Used Equipment</h3>
+        <ul>
+          <li><strong>Facebook Marketplace</strong> — Search "patient lift" locally. Many families sell gently used lifts after a loved one passes</li>
+          <li><strong>Craigslist</strong> — Medical equipment section</li>
+          <li><strong>eBay</strong> — Used patient lifts often available at 50-70% off retail</li>
+          <li><strong>Local disability groups on Facebook</strong> — Community members often share or lend equipment</li>
+        </ul>
+
+        <div className="info-box success">
+          <strong>Tip: Start with rental</strong>
+          If you're unsure what you need, rent first. A local DME company can deliver a lift to
+          your home, set it up, and train your caregiver. If it works, you can then decide whether
+          to buy or continue renting. Medicare often covers the rental cost.
+        </div>
+      </div>
+
+      {/* ═══════════════════════════════════════════════════════════════
+          PORTABLE COMMODES
+         ═══════════════════════════════════════════════════════════════ */}
       <div className="card">
         <h2>Portable Commodes for Hotels</h2>
         <p>
           When hotel bathrooms aren't accessible, a portable commode in the room eliminates the
-          need to transfer to the hotel toilet entirely.
+          need to transfer to the hotel toilet entirely. Combined with a portable lift, this can
+          make hotel stays possible.
         </p>
         <div className="tip-item">
           <div className="tip-icon">1</div>
@@ -359,7 +319,10 @@ export default function AdvancedBathroomPage() {
             <h4>Drive Medical Folding Steel Commode — ~$31</h4>
             <p>
               #1 best seller. Folds flat, adjustable height, bucket included, 350 lb capacity.
-              Fits in a suitcase or carry bag. The most popular portable commode for a reason.
+              Fits in a suitcase or carry bag.
+            </p>
+            <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
+              <a href="https://www.amazon.com/s?k=Drive+Medical+folding+commode" target="_blank" rel="noopener noreferrer">View on Amazon</a>
             </p>
           </div>
         </div>
@@ -368,45 +331,25 @@ export default function AdvancedBathroomPage() {
           <div className="tip-content">
             <h4>Carex 3-in-1 Folding Commode — ~$55</h4>
             <p>
-              Functions as a commode, raised toilet seat, and shower chair. Folds for travel,
-              300 lb capacity. Best all-around option for versatility.
+              Functions as commode, raised toilet seat, and shower chair. Folds for travel,
+              300 lb capacity. Best all-around option.
+            </p>
+            <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
+              <a href="https://www.amazon.com/s?k=Carex+3-in-1+folding+commode" target="_blank" rel="noopener noreferrer">View on Amazon</a>
             </p>
           </div>
-        </div>
-        <div className="tip-item">
-          <div className="tip-icon">3</div>
-          <div className="tip-content">
-            <h4>Boreeman Portable Toilet — ~$30</h4>
-            <p>
-              Foldable, height adjustable, 400 lb capacity. Comes with lid for dignity and
-              odor control. Includes waste bags.
-            </p>
-          </div>
-        </div>
-        <div className="tip-item">
-          <div className="tip-icon">4</div>
-          <div className="tip-content">
-            <h4>Hapoon XL Portable Toilet — ~$33</h4>
-            <p>
-              Folding with lid, includes bags, XL size for larger patients. Good for bariatric needs.
-            </p>
-          </div>
-        </div>
-
-        <div className="info-box info">
-          <strong>Commode + portable lift = complete solution</strong>
-          If your loved one cannot transfer to a toilet at all, bring a portable commode AND a
-          portable lift. Use the lift to transfer from wheelchair to commode in the hotel room.
-          This combination eliminates the need for any accessible hotel bathroom features.
         </div>
       </div>
 
+      {/* ═══════════════════════════════════════════════════════════════
+          PORTABLE URINALS
+         ═══════════════════════════════════════════════════════════════ */}
       <div className="card">
-        <h2>Portable Urinals & Bathroom Aids</h2>
+        <h2>Portable Urinals — Toileting Without Transferring</h2>
         <p>
           For situations where even a commode transfer isn't possible — on long car rides, in
-          hotel rooms without space for a commode, or when you can't find an accessible restroom.
-          These devices allow toileting while remaining in the wheelchair.
+          hotel rooms without space, or when you can't find an accessible restroom. These devices
+          allow toileting while remaining in the wheelchair.
         </p>
 
         <h3>Male Urinals</h3>
@@ -416,8 +359,10 @@ export default function AdvancedBathroomPage() {
             <h4>Collapsible Urine Bottle — ~$10</h4>
             <p>
               750ml collapsible bottle with spill-proof lid. Fits in a bag when collapsed.
-              The simplest solution for men who can still position a bottle. Available at
-              any pharmacy or medical supply store.
+              The simplest solution for men who can still position a bottle.
+            </p>
+            <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
+              <a href="https://www.amazon.com/s?k=collapsible+urine+bottle+wheelchair" target="_blank" rel="noopener noreferrer">View on Amazon</a>
             </p>
           </div>
         </div>
@@ -440,17 +385,11 @@ export default function AdvancedBathroomPage() {
             <h4>pStyle — ~$13</h4>
             <p>
               Made in USA, reusable, highly rated (4.6 stars, 1,500+ reviews). Allows women to
-              urinate while seated in a wheelchair or standing. No bags, no disposable parts —
-              just rinse and reuse. The gold standard for female wheelchair users.
+              urinate while seated in a wheelchair. No bags, no disposable parts — rinse and reuse.
+              The gold standard for female wheelchair users.
             </p>
-          </div>
-        </div>
-        <div className="tip-item">
-          <div className="tip-icon">♀</div>
-          <div className="tip-content">
-            <h4>TRIPTIPS Pee Conch — ~$15</h4>
-            <p>
-              Foldable female urination device with tube and carrying case. Compact and discreet.
+            <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
+              <a href="https://www.amazon.com/s?k=pStyle+female+urinal" target="_blank" rel="noopener noreferrer">View on Amazon</a>
             </p>
           </div>
         </div>
@@ -461,74 +400,188 @@ export default function AdvancedBathroomPage() {
             <p>
               32 oz spill-proof female urinal. HSA eligible. Larger capacity for extended outings.
             </p>
-          </div>
-        </div>
-        <div className="tip-item">
-          <div className="tip-icon">♀</div>
-          <div className="tip-content">
-            <h4>Tinkle Belle — ~$28</h4>
-            <p>
-              Includes carrying case, stand-to-pee design. Discreet and easy to use.
+            <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
+              <a href="https://www.amazon.com/s?k=Loona+premium+female+urinal" target="_blank" rel="noopener noreferrer">View on Amazon</a>
             </p>
           </div>
-        </div>
-
-        <h3>Wearable Collection Systems</h3>
-        <div className="tip-item">
-          <div className="tip-icon">♻</div>
-          <div className="tip-content">
-            <h4>Female Urine Collection System — ~$26</h4>
-            <p>
-              Wearable with adjustable pants, silicone catheter, and collection bag (1000ml or
-              2000ml). For patients who cannot position a urinal independently. Caregiver
-              assists with setup and emptying.
-            </p>
-          </div>
-        </div>
-        <div className="tip-item">
-          <div className="tip-icon">♻</div>
-          <div className="tip-content">
-            <h4>External Catheter with Collection Bag — ~$20</h4>
-            <p>
-              Wearable urine collection bag with external catheter interface. For extended
-              outings where restroom access is unreliable.
-            </p>
-          </div>
-        </div>
-
-        <div className="info-box warning">
-          <strong>Practice at home first</strong>
-          Any urinal or collection device should be practiced with at home before relying on it
-          in public. Positioning, angle, and caregiver assistance techniques all need to be
-          figured out in a low-pressure environment.
         </div>
       </div>
 
+      {/* ═══════════════════════════════════════════════════════════════
+          BIDETS — CRITICAL FOR IBM
+         ═══════════════════════════════════════════════════════════════ */}
+      <div className="card">
+        <h2>Bidets — Essential for IBM Patients</h2>
+        <p>
+          <strong>This is one of the most important pieces of equipment for IBM patients.</strong> People
+          with IBM have weak arms and hands — wiping after using the toilet becomes impossible or
+          extremely difficult. A bidet eliminates the need for wiping entirely, preserving dignity,
+          hygiene, and skin health.
+        </p>
+        <div className="info-box success">
+          <strong>Why bidets matter for IBM</strong>
+          Inadequate perineal cleaning leads to urinary tract infections, skin breakdown, and
+          infections. For someone who cannot wipe, a bidet isn't a luxury — it's a medical
+          necessity. Most bidet seats are HSA/FSA eligible.
+        </div>
+
+        <h3>Built-in Bidet Toilet Seats (Home Use)</h3>
+        <p>
+          These replace your existing toilet seat. Connect to your water supply. The patient
+          sits down, presses a button, and the bidet does everything — no wiping needed.
+        </p>
+
+        <div className="tip-item">
+          <div className="tip-icon">✦</div>
+          <div className="tip-content">
+            <h4>Bio Bidet SlimEdge — ~$41</h4>
+            <p>
+              Non-electric, dual nozzles, adjustable pressure. The most affordable bidet seat.
+              No power needed — works from water pressure alone. A great starting point.
+            </p>
+            <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
+              <a href="https://www.amazon.com/s?k=Bio+Bidet+SlimEdge" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+            </p>
+          </div>
+        </div>
+
+        <div className="tip-item">
+          <div className="tip-icon">✦</div>
+          <div className="tip-content">
+            <h4>Brondell Swash Ecoseat — ~$90</h4>
+            <p>
+              Non-electric, dual nozzle, ambient water temperature. Easy install. A significant
+              step up from basic bidets without the cost of electric models.
+            </p>
+            <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
+              <a href="https://www.amazon.com/s?k=Brondell+Swash+Ecoseat" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+            </p>
+          </div>
+        </div>
+
+        <div className="tip-item">
+          <div className="tip-icon">✦</div>
+          <div className="tip-content">
+            <h4>TUSHY Classic 3.0 — ~$129</h4>
+            <p>
+              Non-electric, self-cleaning nozzle, adjustable pressure and angle. One of the most
+              popular bidet brands. Simple install, no electricity required.
+            </p>
+            <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
+              <a href="https://www.amazon.com/s?k=TUSHY+Classic+bidet" target="_blank" rel="noopener noreferrer">View on Amazon</a> ·
+              <a href="https://www.youtube.com/results?search_query=TUSHY+bidet+install+review" target="_blank" rel="noopener noreferrer" style={{ marginLeft: 6 }}>Watch review</a>
+            </p>
+          </div>
+        </div>
+
+        <div className="tip-item">
+          <div className="tip-icon">✦</div>
+          <div className="tip-content">
+            <h4>TOTO Washlet A2 — ~$247</h4>
+            <p>
+              Electric, heated seat, SoftClose lid. TOTO is the original bidet company. Electric
+              models warm the water and seat — more comfortable, especially in winter.
+            </p>
+            <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
+              <a href="https://www.amazon.com/s?k=TOTO+Washlet+A2" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+            </p>
+          </div>
+        </div>
+
+        <div className="tip-item">
+          <div className="tip-icon">✦</div>
+          <div className="tip-content">
+            <h4>Brondell S1400 — ~$550</h4>
+            <p>
+              Premium electric. Endless warm water, warm air dryer (eliminates need for any
+              wiping), nightlight, heated seat. The air dryer is the key feature for IBM patients
+              — it dries everything so no towel or wiping is needed at all.
+            </p>
+            <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
+              <a href="https://www.amazon.com/s?k=Brondell+S1400" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+            </p>
+          </div>
+        </div>
+
+        <h3>Travel Bidets</h3>
+        <p>
+          Portable squeeze-bottle bidets for use when away from home. Small enough to fit in a
+          purse or bag. Use in any restroom or in the hotel room.
+        </p>
+
+        <div className="tip-item">
+          <div className="tip-icon">~</div>
+          <div className="tip-content">
+            <h4>Brondell GoSpa GS-70 — ~$10</h4>
+            <p>
+              Collapsible squeeze bottle, 400ml, 8,600+ reviews. The most popular travel bidet.
+              Fits in a purse when collapsed. Simple, effective, no batteries. A must-pack item.
+            </p>
+            <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
+              <a href="https://www.amazon.com/s?k=Brondell+GoSpa+GS-70" target="_blank" rel="noopener noreferrer">View on Amazon</a> ·
+              <a href="https://www.youtube.com/results?search_query=portable+bidet+for+disabled+wheelchair" target="_blank" rel="noopener noreferrer" style={{ marginLeft: 6 }}>Watch demo</a>
+            </p>
+          </div>
+        </div>
+
+        <div className="tip-item">
+          <div className="tip-icon">~</div>
+          <div className="tip-content">
+            <h4>TUSHY Travel Bidet — ~$25</h4>
+            <p>
+              Expandable, discreet design. Slightly more refined than the Brondell. Good for
+              frequent travelers.
+            </p>
+            <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
+              <a href="https://www.amazon.com/s?k=TUSHY+travel+bidet" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+            </p>
+          </div>
+        </div>
+
+        <div className="tip-item">
+          <div className="tip-icon">~</div>
+          <div className="tip-content">
+            <h4>CuloClean — ~$10</h4>
+            <p>
+              Ultralight (12 grams!), fits any standard water bottle. The most compact option —
+              just a small nozzle that screws onto a bottle. Almost zero pack weight.
+            </p>
+            <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
+              <a href="https://www.amazon.com/s?k=CuloClean+portable+bidet" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+            </p>
+          </div>
+        </div>
+
+        <div className="tip-item">
+          <div className="tip-icon">~</div>
+          <div className="tip-content">
+            <h4>VIKKEN Travel Bidet — ~$45</h4>
+            <p>
+              USB-C rechargeable electric pump, 300ml. Pressurized spray without squeezing.
+              Best for patients or caregivers with weak hands who can't squeeze a bottle.
+            </p>
+            <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
+              <a href="https://www.amazon.com/s?k=VIKKEN+travel+bidet" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* ═══════════════════════════════════════════════════════════════
+          TRANSFER SLINGS AND GAIT BELTS
+         ═══════════════════════════════════════════════════════════════ */}
       <div className="card">
         <h2>Transfer Slings & Gait Belts</h2>
-        <p>
-          Even with a portable lift, you need the right sling. And for partial-assist transfers
-          (where the patient can bear some weight), gait belts and transfer slings reduce
-          caregiver strain significantly.
-        </p>
         <div className="tip-item">
           <div className="tip-icon"> sling </div>
           <div className="tip-content">
             <h4>Vive Patient Lift Sling (Full Body) — ~$40</h4>
             <p>
-              Mesh material, shower-compatible (can be used in the shower without waterlogging),
-              4.7 stars (1,200+ reviews). Works with most portable lifts. The best all-around
-              sling for IBM patients who need full support.
+              Mesh material, shower-compatible, 4.7 stars (1,200+ reviews). Works with most
+              portable lifts including Molift. Best all-around sling for IBM patients.
             </p>
-          </div>
-        </div>
-        <div className="tip-item">
-          <div className="tip-icon"> sling </div>
-          <div className="tip-content">
-            <h4>Vive Transfer Sling — ~$45</h4>
-            <p>
-              For stairs, chairs, and car transfers. Multiple handle positions give caregivers
-              better leverage. 4.3 stars. Good for non-lift transfers.
+            <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
+              <a href="https://www.amazon.com/s?k=Vive+full+body+patient+lift+sling" target="_blank" rel="noopener noreferrer">View on Amazon</a>
             </p>
           </div>
         </div>
@@ -538,135 +591,63 @@ export default function AdvancedBathroomPage() {
             <h4>Gait Belt with 7 Handles — ~$18</h4>
             <p>
               Quick-release buckle, multiple grip points. For patients who can bear some weight
-              but need balance support. The handles give caregivers something secure to hold
-              without grabbing the patient's arms or clothing.
+              but need balance support. Gives caregivers something secure to hold.
             </p>
-          </div>
-        </div>
-        <div className="tip-item">
-          <div className="tip-icon"> belt </div>
-          <div className="tip-content">
-            <h4>Parabound Transfer Sling / Lift Assist — ~$30</h4>
-            <p>
-              Gait belt style with lift assist handles. 4.4 stars. A middle ground between
-              a gait belt and a full transfer sling.
+            <p style={{ marginTop: 6, fontSize: '0.82rem', color: 'var(--text-tertiary)' }}>
+              <a href="https://www.amazon.com/s?k=gait+belt+with+handles" target="_blank" rel="noopener noreferrer">View on Amazon</a>
             </p>
           </div>
         </div>
       </div>
 
+      {/* ═══════════════════════════════════════════════════════════════
+          YOUTUBE VIDEOS
+         ═══════════════════════════════════════════════════════════════ */}
       <div className="card">
-        <h2>Portable Bidet Solutions</h2>
+        <h2>Watch Equipment Demos on YouTube</h2>
         <p>
-          Perineal cleaning is critical for preventing UTIs and skin breakdown, but wiping is
-          nearly impossible with weak arms. A portable bidet eliminates the need for wiping.
+          Seeing equipment in action is the best way to understand how it works. Search these
+          terms on YouTube for real-world demos and reviews:
         </p>
-        <div className="tip-item">
-          <div className="tip-icon">~</div>
-          <div className="tip-content">
-            <h4>Brondell GoSpa GS-70 — ~$10</h4>
-            <p>
-              Collapsible squeeze bottle, 400ml, 8,600+ reviews. The most popular travel bidet.
-              Fits in a purse or bag when collapsed. Simple, effective, no batteries.
-            </p>
-          </div>
-        </div>
-        <div className="tip-item">
-          <div className="tip-icon">~</div>
-          <div className="tip-content">
-            <h4>TUSHY Travel Bidet — ~$25</h4>
-            <p>
-              Expandable, discreet design. Slightly more refined than the Brondell but similar
-              functionality. Good for frequent travelers.
-            </p>
-          </div>
-        </div>
-        <div className="tip-item">
-          <div className="tip-icon">~</div>
-          <div className="tip-content">
-            <h4>CuloClean — ~$10</h4>
-            <p>
-              Ultralight (12 grams!), fits any standard water bottle. The most compact option —
-              just a small nozzle that screws onto a bottle. Almost zero pack weight.
-            </p>
-          </div>
-        </div>
-        <div className="tip-item">
-          <div className="tip-icon">~</div>
-          <div className="tip-content">
-            <h4>VIKKEN Travel Bidet — ~$45</h4>
-            <p>
-              USB-C rechargeable electric pump, 300ml. Pressurized spray without squeezing.
-              Best for patients or caregivers with weak hands who can't squeeze a bottle.
-            </p>
-          </div>
-        </div>
+        <ul>
+          <li><a href="https://www.youtube.com/results?search_query=Molift+Smart+150+patient+lift+demo" target="_blank" rel="noopener noreferrer">Molift Smart 150 patient lift demo</a> — Watch the full-body sling lift in action</li>
+          <li><a href="https://www.youtube.com/results?search_query=Molift+Raiser+transfer+wheelchair+bed" target="_blank" rel="noopener noreferrer">Molift Raiser transfer wheelchair to bed</a> — Sit-to-stand lift demonstration</li>
+          <li><a href="https://www.youtube.com/results?search_query=Invacare+Get+U+Up+sit+to+stand+lift" target="_blank" rel="noopener noreferrer">Invacare Get-U-Up sit-to-stand lift</a> — Sit-to-stand lift demonstration</li>
+          <li><a href="https://www.youtube.com/results?search_query=SureHands+ceiling+lift+system" target="_blank" rel="noopener noreferrer">SureHands ceiling lift system</a> — See how ceiling-mounted lifts work</li>
+          <li><a href="https://www.youtube.com/results?search_query=SuperHandy+GoRise+lift+review" target="_blank" rel="noopener noreferrer">SuperHandy GoRise lift review</a> — Ultra-light 19 lb lift</li>
+          <li><a href="https://www.youtube.com/results?search_query=Etac+Turner+transfer+demo" target="_blank" rel="noopener noreferrer">Etac Turner transfer demo</a> — Pivot transfer aid</li>
+          <li><a href="https://www.youtube.com/results?search_query=bidet+toilet+seat+install+wheelchair+user" target="_blank" rel="noopener noreferrer">Bidet toilet seat install for wheelchair user</a> — How bidets help with hygiene</li>
+          <li><a href="https://www.youtube.com/results?search_query=portable+bidet+for+disabled" target="_blank" rel="noopener noreferrer">Portable bidet for disabled</a> — Travel bidet demos</li>
+          <li><a href="https://www.youtube.com/results?search_query=power+wheelchair+transfer+technique" target="_blank" rel="noopener noreferrer">Power wheelchair transfer technique</a> — Transfer methods and equipment</li>
+        </ul>
       </div>
 
+      {/* ═══════════════════════════════════════════════════════════════
+          BATHROOM MODIFICATIONS
+         ═══════════════════════════════════════════════════════════════ */}
       <div className="card">
-        <h2>Recommended Travel Kit</h2>
-        <p>
-          Based on research, here's a complete travel toileting kit for an advanced IBM patient
-          who cannot transfer independently:
-        </p>
-        <table className="comparison-table">
-          <thead>
-            <tr>
-              <th>Item</th>
-              <th>Product</th>
-              <th>Approx. Cost</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Portable lift</strong></td>
-              <td>VOCIC AY06 Electric Transfer Lift</td>
-              <td>$810</td>
-            </tr>
-            <tr>
-              <td><strong>Portable commode</strong></td>
-              <td>Carex 3-in-1 Folding Commode</td>
-              <td>$55</td>
-            </tr>
-            <tr>
-              <td><strong>Transfer sling</strong></td>
-              <td>Vive Full Body Mesh Sling</td>
-              <td>$40</td>
-            </tr>
-            <tr>
-              <td><strong>Urinal</strong></td>
-              <td>pStyle (female) / Collapsible bottle (male)</td>
-              <td>$10-13</td>
-            </tr>
-            <tr>
-              <td><strong>Portable bidet</strong></td>
-              <td>Brondell GoSpa GS-70</td>
-              <td>$10</td>
-            </tr>
-            <tr>
-              <td><strong>Shower chair</strong></td>
-              <td>VOCIC Folding Shower Chair</td>
-              <td>$76</td>
-            </tr>
-            <tr>
-              <td><strong>Grab bars</strong></td>
-              <td>Suction cup temporary grab bars (set of 2)</td>
-              <td>$25</td>
-            </tr>
-            <tr>
-              <td><strong>Handheld showerhead</strong></td>
-              <td>Universal fit attachment</td>
-              <td>$25</td>
-            </tr>
-          </tbody>
-        </table>
-        <div className="info-box success">
-          <strong>Total estimated kit cost: ~$1,054</strong>
-          This is a one-time investment that enables safe travel. Many of these items (commode,
-          bidet, urinal, sling) are HSA/FSA eligible. Check with your insurance for coverage.
-        </div>
+        <h2>Bathroom Modifications</h2>
+        <h3>Essential</h3>
+        <ul>
+          <li><strong>Grab bars:</strong> Near toilet (both sides), inside shower, at shower entry — screwed into studs, NOT suction cups — $20-60 each</li>
+          <li><strong>Non-slip flooring:</strong> Non-slip tiles or adhesive strips — $1-5/sq ft</li>
+          <li><strong>Handheld showerhead:</strong> Essential for seated showering — $20-80</li>
+          <li><strong>Shower chair or bench:</strong> Height-adjustable, padded, with back support — $50-300</li>
+          <li><strong>Bidet toilet seat:</strong> See bidet section above — $41-550</li>
+        </ul>
+
+        <h3>Strongly Recommended</h3>
+        <ul>
+          <li><strong>Roll-in shower:</strong> Curbless entry for wheelchair access — $1,000-5,000 to install</li>
+          <li><strong>Ceiling track lift:</strong> Motorized lift on ceiling-mounted track — $3,000-8,000 installed, but eliminates caregiver lifting entirely</li>
+          <li><strong>Widened doorway:</strong> Minimum 32" clearance — $200-1,000 per door</li>
+          <li><strong>Anti-scald valves:</strong> Prevents burns — $30-100</li>
+        </ul>
       </div>
 
+      {/* ═══════════════════════════════════════════════════════════════
+          TRAVEL TOILETING
+         ═══════════════════════════════════════════════════════════════ */}
       <div className="card">
         <h2>Travel Toileting</h2>
         <p>
@@ -678,38 +659,75 @@ export default function AdvancedBathroomPage() {
         <ul>
           <li><strong>Call ahead:</strong> Don't trust "accessible" labels — ask specifically: Is there a roll-in shower? What is the toilet height? Are there grab bars? Is there space for a wheelchair alongside the toilet?</li>
           <li><strong>Request photos:</strong> Ask the hotel to email photos of the accessible bathroom</li>
-          <li><strong>Bring your own equipment:</strong> Portable shower chair, raised toilet seat, suction cup grab bars (temporary), and a handheld showerhead attachment</li>
-          <li><strong>Lower floor:</strong> Request a room on a lower floor for easier evacuation in emergency</li>
+          <li><strong>Bring your own equipment:</strong> Portable commode, travel bidet, suction cup grab bars, handheld showerhead attachment</li>
+          <li><strong>Lower floor:</strong> Request a room on a lower floor for easier evacuation</li>
         </ul>
 
-        <h3>Portable Equipment for Travel</h3>
-        <ul>
-          <li><strong>Folding shower chair:</strong> Lightweight, portable, fits in luggage — $50-150</li>
-          <li><strong>Portable raised toilet seat:</strong> Clips onto any toilet — $30-80</li>
-          <li><strong>Suction cup grab bars:</strong> Temporary grab bars for hotel bathrooms — $15-40 (test before relying on them)</li>
-          <li><strong>Handheld showerhead attachment:</strong> Universal fit, connects to any showerhead — $20-40</li>
-          <li><strong>No-rinse cleansing products:</strong> For bed baths when showering isn't possible — $10-30</li>
-        </ul>
+        <h3>Recommended Travel Kit</h3>
+        <table className="comparison-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Product</th>
+              <th>Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Portable lift</strong></td>
+              <td>Molift Smart 150 (if you can manage 45 lbs)</td>
+              <td>~$4,000</td>
+            </tr>
+            <tr>
+              <td><strong>Budget lift</strong></td>
+              <td>VOCIC Electric Transfer Lift</td>
+              <td>~$1,000</td>
+            </tr>
+            <tr>
+              <td><strong>Portable commode</strong></td>
+              <td>Carex 3-in-1 Folding Commode</td>
+              <td>~$55</td>
+            </tr>
+            <tr>
+              <td><strong>Transfer sling</strong></td>
+              <td>Vive Full Body Mesh Sling</td>
+              <td>~$40</td>
+            </tr>
+            <tr>
+              <td><strong>Urinal</strong></td>
+              <td>pStyle (female) / Collapsible bottle (male)</td>
+              <td>$10-13</td>
+            </tr>
+            <tr>
+              <td><strong>Travel bidet</strong></td>
+              <td>Brondell GoSpa GS-70</td>
+              <td>~$10</td>
+            </tr>
+            <tr>
+              <td><strong>Grab bars</strong></td>
+              <td>Suction cup temporary grab bars (set of 2)</td>
+              <td>~$25</td>
+            </tr>
+          </tbody>
+        </table>
 
         <div className="info-box info">
           <strong>AccessibleGO and Wheel the World</strong>
-          These websites provide detailed, wheelchair-user-reviewed assessments of hotel bathroom
+          These websites provide wheelchair-user-reviewed assessments of hotel bathroom
           accessibility. Check them before booking.
         </div>
       </div>
 
+      {/* ═══════════════════════════════════════════════════════════════
+          SKIN CARE
+         ═══════════════════════════════════════════════════════════════ */}
       <div className="card">
         <h2>Skin Care and Hygiene</h2>
-        <p>
-          Limited mobility and difficulty showering increase the risk of skin problems. Prevention
-          is critical:
-        </p>
         <ul>
-          <li><strong>Pressure sores:</strong> Inspect skin daily, especially over bony prominences (sacrum, heels, hips, elbows). Use pressure-relieving cushions and perform regular weight shifts</li>
+          <li><strong>Pressure sores:</strong> Inspect skin daily over bony prominences (sacrum, heels, hips). Use pressure-relieving cushions and perform regular weight shifts</li>
           <li><strong>Moisture management:</strong> Keep skin clean and dry; use moisture barrier creams in skin folds</li>
-          <li><strong>Perineal care:</strong> Essential for preventing urinary tract infections and skin breakdown — use gentle cleansers and pat dry, never rub</li>
+          <li><strong>Perineal care:</strong> Essential for preventing UTIs and skin breakdown — use a bidet (see above) and gentle cleansers</li>
           <li><strong>Oral care:</strong> Critical for aspiration pneumonia prevention — brush teeth twice daily; if unable, use oral swabs</li>
-          <li><strong>Regular bathing schedule:</strong> Even if full showers aren't possible daily, maintain a regular hygiene routine with bed baths or sponge baths</li>
         </ul>
       </div>
     </>

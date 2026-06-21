@@ -8,7 +8,7 @@ export default function Footer() {
         <div>
           <h3>Inclusion Body Myositis Awareness</h3>
           <p>
-            IBM is the most common acquired muscle disease in adults over 45, affecting approximately
+            IBM is the most common acquired muscle disease in adults over 50, affecting approximately
             20,000 people in the United States. While there is currently no cure, understanding the
             disease and connecting with resources can significantly improve quality of life.
           </p>

@@ -5,7 +5,7 @@ export default function HomePage() {
     <>
       <div className="page-header">
         <h1>Inclusion Body Myositis (IBM)</h1>
-        <p className="subtitle">Understanding the most common acquired muscle disease in adults over 45</p>
+        <p className="subtitle">Understanding the most common acquired muscle disease in adults over 50</p>
       </div>
 
       <div className="stat-row">
