@@ -1,93 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ibm-awareness.netlify.app/</loc>
+    <loc>https://ibm-awareness.org/</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://ibm-awareness.netlify.app/types</loc>
+    <loc>https://ibm-awareness.org/types</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ibm-awareness.netlify.app/stages</loc>
+    <loc>https://ibm-awareness.org/stages</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ibm-awareness.netlify.app/tips/early</loc>
+    <loc>https://ibm-awareness.org/tips/early</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ibm-awareness.netlify.app/tips/middle</loc>
+    <loc>https://ibm-awareness.org/tips/middle</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ibm-awareness.netlify.app/tips/advanced</loc>
+    <loc>https://ibm-awareness.org/tips/advanced</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ibm-awareness.netlify.app/tips/general</loc>
+    <loc>https://ibm-awareness.org/tips/general</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ibm-awareness.netlify.app/advanced</loc>
+    <loc>https://ibm-awareness.org/advanced</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ibm-awareness.netlify.app/advanced/travel</loc>
+    <loc>https://ibm-awareness.org/advanced/travel</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ibm-awareness.netlify.app/advanced/equipment</loc>
+    <loc>https://ibm-awareness.org/advanced/equipment</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ibm-awareness.netlify.app/advanced/caregiving</loc>
+    <loc>https://ibm-awareness.org/advanced/caregiving</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ibm-awareness.netlify.app/advanced/bathroom</loc>
+    <loc>https://ibm-awareness.org/advanced/bathroom</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ibm-awareness.netlify.app/resources</loc>
+    <loc>https://ibm-awareness.org/resources</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ibm-awareness.netlify.app/just-diagnosed</loc>
+    <loc>https://ibm-awareness.org/just-diagnosed</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://ibm-awareness.netlify.app/blog</loc>
+    <loc>https://ibm-awareness.org/blog</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ibm-awareness.org/blog/ibm-not-just-aging</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ibm-awareness.org/blog/exercise-with-ibm</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ibm-awareness.org/blog/travelling-with-ibm-equipment</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ibm-awareness.org/blog/bidets-for-ibm-patients</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ibm-awareness.org/blog/disability-benefits-ibm</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ibm-awareness.org/adaptive-clothing</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ibm-awareness.org/home-modifications</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
